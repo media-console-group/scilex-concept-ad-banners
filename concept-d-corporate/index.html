@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex,nofollow">
+<meta charset="UTF-8">
+<meta name="ad.size" content="width=300,height=600">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="viewport" content="width=300,initial-scale=1">
+<link rel="icon" href="data:,">
+<title>Scilex Holding Company — Investor Relations</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!--
+  Scilex Holding Company — IR display banner, 300x600 — Concept D: Corporate site / brand-native.
+  Promotes: https://media-console-group.github.io/scilex-ir-concept/
+  Styled from the company's own CORPORATE website (https://www.scilexholding.com/), not the IR
+  landing page that Concepts A-C are built from: its white header + logo
+  lockup, heading/body fonts, palette, accent underline bars, button style
+  and footer strip. "Homepage in miniature": each slide is one module of the
+  corporate homepage, alternating photo and light grounds. This build uses scilexholding.com's modules: 1 hero -> 2 product card -> 3 purple band -> 4 features block.
+  Module classes (m-hero / m-stats / m-split / m-band) and the shared parts
+  (d-stat, d-list, d-arrows) live in style.css; every colour is a :root token
+  filled from brand.json "corp". Re-module a slide if the site has no such
+  module. Photos are the site's own photography, cropped into assets/;
+  assets/logo.svg is the site's own logo file. Every claim comes from the
+  project fact sheet (.tmp/facts.md).
+-->
+
+<div id="banner" aria-label="Scilex Holding Company investor relations advertisement">
+
+  <div id="slides">
+
+    <!-- Slide 1 — Overview -->
+    <section class="slide m-hero" data-index="0">
+      <!-- Module: scilexholding.com homepage hero ("Re-engineering Pain Management" over the sunrise photo strip),
+           with the site's navy as the text panel. Facts: Q2 2026 10-Q (portfolio + pipeline). -->
+      <img class="d-photo" src="assets/slide-1.jpg" alt="Illustrative image: a cyclist riding at sunrise">
+      <div class="hero-panel">
+        <h2>Re-engineering Pain Management</h2>
+        <p class="hero-desc">Scilex acquires, develops and commercializes non-opioid treatments for acute and chronic pain.</p>
+        <div class="d-stats">
+          <div class="d-stat">
+            <p class="d-value">3</p>
+            <p class="d-label">FDA-approved products</p>
+          </div>
+          <div class="d-stat">
+            <p class="d-value">3</p>
+            <p class="d-label">Pipeline candidates</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Slide 2 — Commercial traction -->
+    <section class="slide m-split" data-index="1">
+      <!-- Module: scilexholding.com "Product Portfolio" card (the ELYXYB card photo) over a white card with the
+           site's navy Poppins heading. Facts: Q2 2026 10-Q product revenue table. -->
+      <figure class="split-fig">
+        <img class="split-photo" src="assets/slide-3.jpg" alt="ELYXYB product card from scilexholding.com: a smiling woman outdoors">
+        <figcaption>Illustrative image</figcaption>
+      </figure>
+      <div class="split-card">
+        <h2>ELYXYB&reg; Net Revenue Up 26%</h2>
+        <ul class="d-list">
+          <li>$1.14M in Q2 2026 vs. $0.91M in Q2 2025 (unaudited, Form 10-Q).</li>
+        </ul>
+        <hr class="d-rule">
+        <ul class="d-list">
+          <li>Celecoxib oral solution for acute migraine, with or without aura, in adults.
+            <ul class="d-arrows">
+              <li>The only FDA-approved, ready-to-use oral solution for it (company)</li>
+              <li>Also approved by Health Canada (Jan 2025)</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Slide 3 — Late-stage pipeline -->
+    <section class="slide m-band" data-index="2">
+      <!-- Module: scilexholding.com purple "Testimonials" band: the band's own ZTlido photo under the site's
+           navy-to-purple, centred white Poppins copy. Facts: Q2 2026 10-Q (SEMDEXA, SP-103 Fast Track). -->
+      <img class="d-photo" src="assets/slide-4.jpg" alt="ZTlido topical system packaging, from scilexholding.com">
+      <div class="band-content">
+        <h2>SEMDEXA&trade; Is in Its Second Phase&nbsp;3 Study</h2>
+        <p class="band-desc">If approved, it could become the first FDA-approved alternative to off-label epidural steroid injections. The first pivotal Phase 3 met its primary and secondary endpoints.</p>
+        <div class="d-stats">
+          <div class="d-stat">
+            <p class="d-value">12M+</p>
+            <p class="d-label">U.S. epidural steroid injections a year (company)</p>
+          </div>
+          <div class="d-stat">
+            <p class="d-value">2</p>
+            <p class="d-label">FDA Fast Track designations</p>
+          </div>
+        </div>
+        <p class="band-note">SEMDEXA (SP-102) is investigational and not FDA-approved.</p>
+      </div>
+    </section>
+
+    <!-- Slide 4 — Commercial reach -->
+    <section class="slide m-stats" data-index="3">
+      <!-- Module: scilexholding.com "Why Choose Us / Our Company Features" block: small uppercase eyebrow, navy
+           Poppins heading, centred copy; values over the site's accent bars. Facts: Q2 2026 10-Q. -->
+      <div class="stats-head">
+        <h2>Reaching the Doctors Who Treat Pain</h2>
+        <p>ZTlido&reg; (lidocaine topical system 1.8%) provides continuous pain relief over its 12-hour administration period for post-herpetic neuralgia.</p>
+      </div>
+      <div class="d-stats">
+        <div class="d-stat">
+          <p class="d-value">10,000</p>
+          <p class="d-label">Physicians targeted by the ZTlido sales force</p>
+        </div>
+        <div class="d-stat">
+          <p class="d-value">~34</p>
+          <p class="d-label">People in the dedicated sales force (Jun 30, 2026)</p>
+        </div>
+        <div class="d-stat">
+          <p class="d-value">2018</p>
+          <p class="d-label">Year ZTlido launched</p>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- Persistent chrome — the corporate site's header, never rotates -->
+  <header id="top-bar" class="reveal" data-delay="0">
+    <img id="logo" src="assets/logo.png" alt="Scilex Holding Company" width="114" height="28">
+    <span id="ticker">Nasdaq:&nbsp;SCLX</span>
+  </header>
+
+  <!-- Slider controls: round navy buttons, like the site's pill buttons -->
+  <button type="button" class="nav-arrow" id="arrow-prev" aria-label="Previous slide">
+    <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M10 3 6 8l4 5" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </button>
+  <button type="button" class="nav-arrow" id="arrow-next" aria-label="Next slide">
+    <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M6 3l4 5-4 5" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </button>
+
+  <div id="bottom-fixed" class="reveal" data-delay="4">
+    <div id="dots" role="tablist" aria-label="Slide selector">
+      <button class="dot active" data-index="0" aria-label="Slide 1: Overview"></button>
+      <button class="dot" data-index="1" aria-label="Slide 2: Commercial traction"></button>
+      <button class="dot" data-index="2" aria-label="Slide 3: Late-stage pipeline"></button>
+      <button class="dot" data-index="3" aria-label="Slide 4: Commercial reach"></button>
+    </div>
+
+    <!-- The corporate site's .btn: radius/gradient border from brand.json corp, arrow after the label -->
+    <a href="#" id="cta">
+      <span>Investors</span>
+      <svg id="cta-arrow" viewBox="0 0 24 25" aria-hidden="true"><path d="M12 4.18066L10.585 5.59566L16.17 11.1807H4V13.1807H16.17L10.585 18.7657L12 20.1807L20 12.1807L12 4.18066Z"/></svg>
+    </a>
+
+    <!-- The corporate site's footer strip, carrying the required forward-looking-statements line -->
+    <p id="fls"><span>SEMDEXA, SP-103 and SP-104 are investigational and not FDA-approved. Pipeline timing and commercial results are forward-looking; see SEC filings for risk factors.</span></p>
+  </div>
+
+  <!-- Standard HTML5-ad click-tag plumbing -->
+  <div id="click-tag-wrapper"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
